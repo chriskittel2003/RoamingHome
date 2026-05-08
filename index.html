@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roaming Home - Electronic Press Kit</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+            padding: 40px 0;
+            border-bottom: 3px solid #ff6b35;
+        }
+        
+        h1 {
+            font-size: 3.5em;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 900;
+        }
+        
+        .tagline {
+            font-size: 1.3em;
+            color: #ff6b35;
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+        
+        .genre-location {
+            font-size: 0.95em;
+            color: #ccc;
+            letter-spacing: 1px;
+        }
+        
+        .content {
+            background: white;
+            padding: 50px;
+            border-radius: 8px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .grid.full {
+            grid-template-columns: 1fr;
+        }
+        
+        section h2 {
+            color: #ff6b35;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            border-bottom: 2px solid #ff6b35;
+            padding-bottom: 10px;
+        }
+        
+        section p {
+            margin-bottom: 15px;
+            line-height: 1.8;
+            color: #555;
+        }
+        
+        .band-member {
+            background: #f8f8f8;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-left: 4px solid #ff6b35;
+            border-radius: 4px;
+        }
+        
+        .band-member strong {
+            color: #ff6b35;
+        }
+        
+        .social-links, .music-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        a {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #ff6b35;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        a:hover {
+            background: #e55a24;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 107, 53, 0.3);
+        }
+        
+        .contact-info {
+            background: #f0f0f0;
+            padding: 25px;
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+        
+        .contact-info p {
+            margin-bottom: 10px;
+        }
+        
+        .contact-info strong {
+            color: #ff6b35;
+        }
+        
+        .originals-list {
+            columns: 2;
+            gap: 20px;
+            margin-top: 15px;
+        }
+        
+        .originals-list li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+        
+        footer {
+            text-align: center;
+            color: #ccc;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #555;
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+            
+            .grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .content {
+                padding: 25px;
+            }
+            
+            .originals-list {
+                columns: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Roaming Home</h1>
+            <p class="tagline">High-Energy Rock from the St. Louis Metro</p>
+            <p class="genre-location">Genre: Rock | Based: Belleville, Illinois & St. Louis Area</p>
+        </header>
+        
+        <div class="content">
+            <!-- Band Bio -->
+            <div class="grid full">
+                <section>
+                    <h2>About the Band</h2>
+                    <p>Roaming Home is a high-energy three-piece rock band from Belleville, Illinois, serving the greater St. Louis bi-state region. Known for tight musicianship, powerful performances, and engaging crowd interaction, the band delivers fresh takes on classic rock favorites alongside compelling original songs.</p>
+                    <p>Their live shows are electric—featuring blues-inspired arrangements and infectious energy that gets audiences on their feet. Whether playing intimate venues, wineries, bars, or community events, Roaming Home brings the passion and professionalism that defines great rock music.</p>
+                </section>
+            </div>
+            
+            <!-- Band Members -->
+            <div class="grid full">
+                <section>
+                    <h2>Meet the Band</h2>
+                    <div class="band-member">
+                        <strong>Lead Vocals & Drums</strong><br>
+                        Dynamic frontman driving the energy of every performance with powerful vocals and solid rhythm.
+                    </div>
+                    <div class="band-member">
+                        <strong>Guitar & Vocals</strong><br>
+                        Talented multi-instrumentalist and primary songwriter, crafting the band's original music with rock-solid guitar work.
+                    </div>
+                    <div class="band-member">
+                        <strong>Bass & Guitar</strong><br>
+                        Versatile bassist providing the foundation while adding depth with additional guitar and vocal contributions.
+                    </div>
+                </section>
+            </div>
+            
+            <!-- Music & Discography -->
+            <div class="grid">
+                <section>
+                    <h2>Original Songs</h2>
+                    <p>Roaming Home has developed a strong catalog of original rock songs:</p>
+                    <ul class="originals-list">
+                        <li>Buffalo Man</li>
+                        <li>Bad Luck Charm</li>
+                        <li>Devil's In You</li>
+                        <li>Doin' What We Got To Do</li>
+                        <li>Don't Know Why</li>
+                        <li>Happy Birthday Me</li>
+                        <li>Living In The Future</li>
+                        <li>Mound</li>
+                        <li>Something For Nothing</li>
+                        <li>Take Me To The Water</li>
+                        <li>Where I Am</li>
+                        <li>And more...</li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h2>Listen & Watch</h2>
+                    <p>Connect with Roaming Home across multiple platforms:</p>
+                    <div class="music-links">
+                        <a href="https://soundcloud.com/roaminghome" target="_blank">SoundCloud</a>
+                        <a href="https://youtube.com/@roaminghomestl" target="_blank">YouTube</a>
+                        <a href="https://www.facebook.com/RoamingHomeSTL/" target="_blank">Facebook</a>
+                    </div>
+                </section>
+            </div>
+            
+            <!-- Contact & Booking -->
+            <div class="grid full">
+                <section>
+                    <h2>Booking & Inquiries</h2>
+                    <p>Interested in booking Roaming Home for your venue, event, or festival? Get in touch!</p>
+                    <div class="contact-info">
+                        <p><strong>Email:</strong> RoamingHomeSTL@gmail.com</p>
+                        <p><strong>Facebook:</strong> <a href="https://www.facebook.com/RoamingHomeSTL/" target="_blank">facebook.com/RoamingHomeSTL</a></p>
+                        <p><strong>Service Area:</strong> St. Louis Metro, Greater Belleville, Illinois Region & Beyond</p>
+                        <p><strong>Availability:</strong> Contact for current booking calendar and special event inquiries</p>
+                    </div>
+                </section>
+            </div>
+            
+            <footer>
+                <p>Electronic Press Kit for Roaming Home | Updated May 2026</p>
+                <p>Share this EPK: chriskittel2003.github.io/RoamingHome</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
